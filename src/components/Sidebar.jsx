@@ -18,7 +18,7 @@ const Sidebar = ({
           <div
             className={`app-sidebar-note ${note.id === activeNote && "active"}`}
             key={note.id}
-            onClick={setActiveNote(note.id)}
+            onClick={() => setActiveNote(note.id)}
           >
             <div className="sidebar-note-title">
               <strong>{note.title}</strong>
